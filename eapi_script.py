@@ -2,7 +2,18 @@
 
 from jsonrpclib import Server
 import getpass
-
+#
+# I added these authentication commands so I wouldnt have to store passwords in the file.
+# I also think it makes one more deliberate in their application as well as may provide some safe guards
+# from inadvertantly kicking the script off
+# I think it would be useful in producation. In lab testing is kind sucks.
+# An option would be to simply do the following
+# To work around entering passwords all the time
+# comment out the current variables UN, PW, EPW, add them as static variable assignments
+# UN = "password"
+# PW = "password2"
+# EPW = "password3"
+#
 UN = raw_input("Username : ")
 PW = getpass.getpass("Password : ")
 EPW = getpass.getpass("enable password: ")
