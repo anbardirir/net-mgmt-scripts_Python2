@@ -6,8 +6,7 @@ import getpass
 # I added these authentication commands so I wouldnt have to store passwords in the file.
 # I also think it makes one more deliberate in their application as well as may provide some safe guards
 # from inadvertantly kicking the script off
-# I think it would be useful in producation. In lab testing is kind sucks.
-# An option would be to simply do the following
+# I think it would be useful in producation. In lab testing is kind sucks!!.
 # To work around entering passwords all the time
 # comment out the current variables UN, PW, EPW, add them as static variable assignments
 # UN = "password"
