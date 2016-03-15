@@ -1,5 +1,5 @@
 #!/usr/bin/python
-__author__ = "twr14152"
+
 from jsonrpclib import Server
 import getpass
 #
