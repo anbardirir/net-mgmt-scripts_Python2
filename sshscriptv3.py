@@ -1,4 +1,3 @@
-__author__ = "twr14152"
 #
 #
 import paramiko
