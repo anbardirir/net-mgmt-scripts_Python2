@@ -1,5 +1,4 @@
-To use the eapi script you will need to create two text files that will be openned when you run the script.
-The first is your device list. In that file you will simply add the ip addresses or host names of the devices your going to run your script on. That file should be saved as device_list.txt. 
+This script was used to configure devices using eapi. To use the eapi script you will need to create two text files that will be openned when you run the script. The first is your device list. In that file you will simply add the ip addresses or host names of the devices your going to run your script on. That file should be saved as device_list.txt. 
 
 10.0.0.x
 10.0.0.y
@@ -18,5 +17,8 @@ configure
 show interfaces ethernet 1
 
 Then to run the script all you would need to do is enter the following from command line
+
+chmod 755 eapi_script.py
+
 ./eapi_script.py
 
