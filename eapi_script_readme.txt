@@ -8,7 +8,7 @@ test-router1
 test-router2
 test-router3
 
-The second file you will need to create is the commands file. Called cli_commands.txt. The script is written like you were going to configure a device.
+The second file you will need to create is the commands file. Called cli_commands.txt. The script is written like you were going to configure a device. It should be noted that commands need to be fully typed out. 
 
 configure
  interface ethernet 1
