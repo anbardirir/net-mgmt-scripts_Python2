@@ -1,10 +1,10 @@
-Enter fil#!/usr/bin/python
+#!/usr/bin/python
 
 
 # The goal of this script was to try and make use of eapi with out having to create host and cli_command file
 # Keeping the script interactive
 # Needless to say its buggy and eapi does not accept partial command syntax
-# Not real functional
+# Not a real functional script
 # Keeping this as a work in progress
 
 from jsonrpclib import Server
