@@ -39,13 +39,13 @@ This script was created to use EAPI to talk with the devices but you do not need
 Its more interactive.
 
 $ ./eapi_script_beta.py
-Enter devices one at a time. Hit enter after each device. Type <exit> when done:
- <>sw1
-Enter devices one at a time. Hit enter after each device. Type <exit> when done:
- <>sw2
-Enter devices one at a time. Hit enter after each device. Type <exit> when done:
+Enter devices one at a time. Hit enter after each device. Type exit when done:
+ sw1
+Enter devices one at a time. Hit enter after each device. Type exit when done:
+ sw2
+Enter devices one at a time. Hit enter after each device. Type exit when done:
  exit
-['<>sw1', '<>sw2']
+['sw1', 'sw2']
 Enter commands one line at a time. Hit enter after each device. Type exit when done.:
  configure
 Enter commands one line at a time. Hit enter after each device. Type exit when done.:
@@ -53,11 +53,12 @@ Enter commands one line at a time. Hit enter after each device. Type exit when d
 Enter commands one line at a time. Hit enter after each device. Type exit when done.:
  description eapi-test-script
 Enter commands one line at a time. Hit enter after each device. Type exit when done.:
+ show interfaces loopback 100
+Enter commands one line at a time. Hit enter after each device. Type exit when done.:
  exit
-[{'input': '<>', 'cmd': 'enable'}, 'configure', 'interface loopback 100', 'description eapi-test-script']
-[{}, {}, {}, {}]
-[{u'messages': [u'Warning: Password input may be echoed.\nPassword: \n']}, {}, {}, {}]
-$
-
+[{'input': '<>', 'cmd': 'enable'}, 'configure', 'interface loopback 100', 'description eapi-test-script', 'show interfaces loopback 100']
+[{}, {}, {}, {}, {u'interfaces': {u'Loopback100': {u'lastStatusChangeTimestamp': 1465570004.7202911, u'name': u'Loopback100', u'interfaceStatus': u'connected', u'description': u'eapi-test-script', u'mtu': 65535, u'hardware': u'loopback', u'bandwidth': 0, u'interfaceAddress': [], u'lineProtocolStatus': u'up', u'forwardingModel': u'routed'}}}]
+[{u'messages': [u'Warning: Password input may be echoed.\nPassword: \n']}, {}, {}, {}, {u'interfaces': {u'Loopback100': {u'lastStatusChangeTimestamp': 1465570547.2242856, u'name': u'Loopback100', u'interfaceStatus': u'connected', u'description': u'eapi-test-script', u'mtu': 65535, u'hardware': u'loopback', u'bandwidth': 0, u'interfaceAddress': [], u'lineProtocolStatus': u'up', u'forwardingModel': u'routed'}}}]
+ $
 
 
