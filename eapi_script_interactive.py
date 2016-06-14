@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# The goal of this script was to try and make use of eapi with out having to create host and cli_command file
+# The goal of this script was to try and make use of eapi without having to create host and cli_command file
 # Keeping the script interactive
 
 from jsonrpclib import Server
