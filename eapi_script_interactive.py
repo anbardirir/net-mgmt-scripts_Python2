@@ -8,16 +8,16 @@
 # Press Enter at the end of each line
 # Type exit to send commands
 
-
 from jsonrpclib import Server
 import getpass
 
-UN = "<>"
 #UN = raw_input("Username : ")
-PW = "<>"
+UN = "<>"
 #PW = getpass.getpass("Password : ")
-EPW = "<>"
+PW = "<>"
 #EPW = getpass.getpass("enable password: ")
+EPW = "<>"
+
 
 device_list = []
 while (True):
@@ -28,6 +28,7 @@ while (True):
 print device_list
 
 host_commands = [{ "cmd": "enable", "input": EPW}]
+
 while (True):
     host_command = raw_input('Enter commands one line at a time. Hit enter after each command line. Type exit when done.:\n ')
     if host_command == 'exit': break
@@ -39,6 +40,5 @@ for ip in device_list:
     switch = Server ("http://%s:%s@%s/command-api" % (UN, PW, ip))
     response = switch.runCmds( 1,host_commands, 'json')
     print response
-
 
 
