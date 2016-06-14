@@ -15,7 +15,7 @@ EPW = "<>"
 
 device_list = []
 while (True):
-    units = raw_input('Enter devices one at a time hit enter after each, type exit when done:\n ')
+    units = raw_input('Enter devices one at a time press enter after each. Type exit when done:\n ')
     if units == 'exit': break
     device_list.append(units)
 
@@ -25,7 +25,7 @@ host_commands = [{ "cmd": "enable", "input": EPW}]
 
 host_commands = []
 while (True):
-    host_command = raw_input('Enter configuration commands one line at a time, type exit when done:\n ')
+    host_command = raw_input('Enter configuration one line at a time. Hit Enter after each line. Type exit when done:\n ')
     if host_command == 'exit': break
     host_commands.append(host_command)
 print host_commands
