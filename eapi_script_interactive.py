@@ -9,7 +9,8 @@
 # Type exit to send commands
 
 from jsonrpclib import Server
-import getpass
+from pprint import pprint
+#import getpass
 
 #UN = raw_input("Username : ")
 UN = "<>"
@@ -39,6 +40,7 @@ print host_commands
 for ip in device_list:
     switch = Server ("http://%s:%s@%s/command-api" % (UN, PW, ip))
     response = switch.runCmds( 1,host_commands, 'json')
-    print response
+    pprint(response)
+
 
 
