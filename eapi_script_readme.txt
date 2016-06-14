@@ -51,15 +51,42 @@ Enter commands one line at a time. Hit enter after each command line. Type exit 
 Enter commands one line at a time. Hit enter after each command line. Type exit when done.:
  interface loopback 100
 Enter commands one line at a time. Hit enter after each command line. Type exit when done.:
- description this is an eapi test script
+ description this is a final test of eapi script
 Enter commands one line at a time. Hit enter after each command line. Type exit when done.:
  show interfaces loopback 100
 Enter commands one line at a time. Hit enter after each command line. Type exit when done.:
  exit
-[{'input': '<>', 'cmd': 'enable'}, 'configure', 'interface loopback 100', 'description this is an eapi test script', 'show interfaces loopback 100']
-[{}, {}, {}, {}, {u'interfaces': {u'Loopback100': {u'lastStatusChangeTimestamp': 1465570004.7202916, u'name': u'Loopback100', u'interfaceStatus': u'connected', u'description': u'this is an eapi test script', u'mtu': 65535, u'hardware': u'loopback', u'bandwidth': 0, u'interfaceAddress': [], u'lineProtocolStatus': u'up', u'forwardingModel': u'routed'}}}]
-[{u'messages': [u'Warning: Password input may be echoed.\nPassword: \n']}, {}, {}, {}, {u'interfaces': {u'Loopback100': {u'lastStatusChangeTimestamp': 1465570547.2242856, u'name': u'Loopback100', u'interfaceStatus': u'connected', u'description': u'this is an eapi test script', u'mtu': 65535, u'hardware': u'loopback', u'bandwidth': 0, u'interfaceAddress': [], u'lineProtocolStatus': u'up', u'forwardingModel': u'routed'}}}]
-~/python_scripts/eapi_scripts $
+[{'input': '<>', 'cmd': 'enable'}, 'configure', 'interface loopback 100', 'description this is a final test of eapi script', 'show interfaces loopback 100']
+[{},
+ {},
+ {},
+ {},
+ {u'interfaces': {u'Loopback100': {u'bandwidth': 0,
+                                   u'description': u'this is a final test of eapi script',
+                                   u'forwardingModel': u'routed',
+                                   u'hardware': u'loopback',
+                                   u'interfaceAddress': [],
+                                   u'interfaceStatus': u'connected',
+                                   u'lastStatusChangeTimestamp': 1465570004.7202919,
+                                   u'lineProtocolStatus': u'up',
+                                   u'mtu': 65535,
+                                   u'name': u'Loopback100'}}}]
+[{u'messages': [u'Warning: Password input may be echoed.\nPassword: \n']},
+ {},
+ {},
+ {},
+ {u'interfaces': {u'Loopback100': {u'bandwidth': 0,
+                                   u'description': u'this is a final test of eapi script',
+                                   u'forwardingModel': u'routed',
+                                   u'hardware': u'loopback',
+                                   u'interfaceAddress': [],
+                                   u'interfaceStatus': u'connected',
+                                   u'lastStatusChangeTimestamp': 1465570547.2242851,
+                                   u'lineProtocolStatus': u'up',
+                                   u'mtu': 65535,
+                                   u'name': u'Loopback100'}}}]
+/python_scripts/eapi_scripts $
+
 
 
 
