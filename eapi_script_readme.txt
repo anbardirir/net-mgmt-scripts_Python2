@@ -111,6 +111,7 @@ Script 2
 **************************
 eapi_script_interactive.py 
 **************************
+
 This script was created to use EAPI to talk with the devices but you do not need to create seperate host and command file to use.
 Its more interactive.
 
