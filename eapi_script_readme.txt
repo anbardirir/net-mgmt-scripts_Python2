@@ -115,6 +115,9 @@ eapi_script_interactive.py
 This script was created to use EAPI to talk with the devices but you do not need to create seperate host and command file to use.
 Its more interactive.
 
+06/18/2016 - updated script so that '@@@@' is now the break sequence rather than 'exit' for the script.
+Example below reflects the output of the previous way the script was written. There were too many legitimate reasons to use the 'exit' command when configuring a device to leave it in place.
+
 ~/python_scripts/eapi_scripts $ ./eapi_script_beta.py
 Enter devices one at a time. Hit enter after each device. Type exit when done.:
  sw1
