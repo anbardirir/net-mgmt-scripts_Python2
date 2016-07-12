@@ -38,7 +38,7 @@ while (True):
 print host_commands
 
 for ip in device_list:
-    switch = Server ("http://%s:%s@%s/command-api" % (UN, PW, ip))
+    switch = Server ("https://%s:%s@%s/command-api" % (UN, PW, ip))
     response = switch.runCmds( 1,host_commands, 'json')
     pprint(response)
 
