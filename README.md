@@ -1,5 +1,5 @@
-# net-mgmt-scripts
-Network Management Scripts
+# netwk-automation-scripts
+Network Automation Scripts
 Disclaimer
 I am network engineer by trade thats trying to make use of a programming language to make useful scripts.
 Should you want to test them, I would recommend trying them in a lab environment.
