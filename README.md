@@ -1,4 +1,4 @@
-# netwk-automation-scripts
+# net-mgmt-scripts
 Network Automation Scripts
 Disclaimer
 I am network engineer by trade thats trying to make use of a programming language to make useful scripts.
