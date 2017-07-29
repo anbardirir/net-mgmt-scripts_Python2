@@ -1,26 +1,31 @@
 
-#This is the telnet Library for Python3 
+#This is the telnet Library for Python3
 #Make sure transport input telnet is enabled on router validate
 
 from getpass import getpass
 import telnetlib
 
-HOST = input("What host do you want to connect to: ")
+host = input("Enter host IPs u want to connect to seperate using a space : ")
+cmd = input("Enter cmd seperate with a ',' : ")
 user = input("Username: ")
 password = getpass("Password: ")
 
+#create lists to iterate through
+hosts = host.split()
+cmds = cmd.split(",")
 
-tn = telnetlib.Telnet(HOST)
+for HOST in hosts:
+    tn = telnetlib.Telnet(HOST)
+    tn.read_until(b"Username: ")
+    tn.write(user.encode('ascii') + b"\n")
+    if password:
+        tn.read_until(b"Password: ")
+        tn.write(password.encode('ascii') + b"\n")
 
-tn.read_until(b"Username: ")
-tn.write(user.encode('ascii') + b"\n")
-if password:
-    tn.read_until(b"Password: ")
-    tn.write(password.encode('ascii') + b"\n")
-
-tn.write(b"term length 0\n")
-tn.write(b"show run \n")
-tn.write(b"exit\n")
-
-print(tn.read_all().decode('ascii'))
+    tn.write(b"term length 0\n")
+    #iterate through cmds using for loop
+    for CMD in cmds:
+        tn.write(CMD.encode('ascii') + b"\n")
+    tn.write(b"exit\n")
+    print(tn.read_all().decode('ascii'))
 
