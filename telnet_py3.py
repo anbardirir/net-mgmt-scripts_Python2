@@ -15,6 +15,7 @@ hosts = host.split()
 cmds = cmd.split(",")
 
 for HOST in hosts:
+    print("Connecting to host:", HOST)
     tn = telnetlib.Telnet(HOST)
     tn.read_until(b"Username: ")
     tn.write(user.encode('ascii') + b"\n")
