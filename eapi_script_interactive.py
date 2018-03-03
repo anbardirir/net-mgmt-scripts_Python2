@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+#(c) 2016 Todd Riemenschneider
 # This script is interactive
 # Enter the devices you want to log into
 # Press Enter after each device
