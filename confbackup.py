@@ -1,7 +1,7 @@
 
 import getpass
 import telnetlib
-
+#(c) 2017 Todd Riemenschneider
 # Get Username and Password
 user = raw_input("Enter your username: ")
 password = getpass.getpass()
