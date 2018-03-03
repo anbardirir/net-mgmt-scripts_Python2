@@ -1,4 +1,4 @@
-#
+#(c) 2015 Todd Riemenschneider
 #
 import paramiko
 import time
