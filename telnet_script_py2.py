@@ -1,6 +1,7 @@
 from __future__ import print_function
 import getpass
 import telnetlib
+
 user = raw_input("Enter your username: ")
 password = getpass.getpass()
 
