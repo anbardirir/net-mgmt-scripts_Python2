@@ -31,4 +31,4 @@ for HOST in hosts:
     saveoutput.write(readoutput)
     saveoutput.write("\n")
     saveoutput.close
-print(readoutput)
+    print(readoutput)
