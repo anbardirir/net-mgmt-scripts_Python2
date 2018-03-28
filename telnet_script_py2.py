@@ -19,8 +19,10 @@ for HOST in hosts:
     if password:
         tn.read_until("Password: ")
 	tn.write(password + "\n")
-        tn.write("enable\n")
-        tn.write(password +"\n")
+	#These lines are commented due to not being needed in lab
+	#May be needed in production
+        #tn.write("enable\n")
+        #tn.write(password +"\n")
 	tn.write("terminal length 0\n")
         for CMD in cmds:
             tn.write(CMD + "\n")
